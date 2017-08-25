@@ -1,0 +1,46 @@
+<!--pages/dynamic/music/music.wxml-->
+<view class="container">
+    <view class="tabBar">
+      <view class="tabItem on">
+          我的
+      </view>
+      <view class="tabItem">
+          好友在听
+      </view>
+      <view class="tabItem">
+          电台
+      </view>
+    </view>
+    <view class="meMusic">
+        <view class="memusicLogo">
+            <image src="http://img1.3lian.com/gif/more/11/201212/c011f2b2ab1a10d79fe931a786503d03.jpg"></image>
+        </view>
+        <view class="memusicDetail">
+            <view class="memusicName">
+               code4Android
+            </view>
+            <view class="memusicRank">
+               好友排行
+            </view>
+        </view>
+        <view class="memusicSee">
+            <image src="../../../images/tip.png"></image>
+        </view>
+    </view>
+    <view class="musicBox">
+        <view class="boxBan">
+           <view class="boxBanItem">
+               <view class="classname"><image src="../../../images/like.png"></image></view>
+               <view class="classname">我喜欢</view>
+           </view>
+           <view class="boxBanItem">
+               <view class="classname"><image src="../../../images/songmenu.png"></image></view>
+               <view class="classname">我的歌单</view>
+           </view>
+           <view class="boxBanItem">
+               <view class="classname"><image src="../../../images/replay.png"></image></view>
+               <view class="classname">最近播放</view>
+           </view>
+        </view>
+    </view>
+</view>

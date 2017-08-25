@@ -1,0 +1,80 @@
+/* pages/dynamic/music/music.wxss */
+page{
+  background: #f8f9fa;
+}
+.tabBar{
+  display: flex;
+  background: #fff;
+  justify-content: center;
+  border-bottom: 1rpx solid #e5e5e5;
+  color:#787878;
+}
+.tabBar .tabItem{
+  width:33.3333%;
+  text-align: center; 
+  padding:4rpx 0rpx;
+  border-bottom: 2rpx solid #fff;
+}
+.tabBar .on{
+  border-bottom:4rpx solid #3eb94e;
+  color:#3eb94e;
+}
+.meMusic{
+   display: flex;
+   box-sizing: border-box;
+   padding:20rpx;
+   align-items: center;
+   background:#fff;
+}
+.meMusic .memusicLogo{
+   display: flex;
+   align-items: center;
+}
+.meMusic .memusicLogo image{
+   width:66rpx;
+   height:66rpx;
+   margin-right:20rpx;
+   border-radius: 50%;
+}
+musicDetail .memusicName{
+   font-size:24rpx;
+   font-weight: 800;   
+}
+.memusicRank{
+   color:#999;
+   font-size:24rpx;
+}
+.memusicSee{
+  display: flex;
+  align-items: center;
+}
+.memusicSee image{
+   width:66rpx;
+   height:66rpx;
+}
+
+.musicBox{
+
+}
+.memusicSee image{
+   width:66rpx;
+   height:66rpx;
+}
+.musicBox .boxBan{
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  margin-top:30rpx;
+  padding:20rpx;
+  border-bottom: 1rpx solid #f8f9fa;
+}
+.boxBanItem{
+  width:33.33333%;
+  text-align: center;
+  font-size:24rpx;
+  font-weight: 600;
+}
+.boxBanItem image{
+  width:66rpx;
+  height:66rpx;
+}
