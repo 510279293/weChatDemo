@@ -78,3 +78,50 @@ musicDetail .memusicName{
   width:66rpx;
   height:66rpx;
 }
+.misicRandom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size:24rpx;
+  background: #fff;
+  box-sizing: border-box;
+  padding:6rpx 20rpx;
+  border-bottom: 1rpx solid #f8f9fa;
+}
+.play,.down{
+  display: flex;
+  align-items: center;
+}
+.misicRandom image{
+  width:56rpx;
+  height:56rpx;
+  margin-right: 20rpx;
+}
+
+.musicList{
+  display: flex;
+  align-items: center; 
+  background: #fff;
+  font-size:24rpx;
+  padding:10rpx 30rpx;
+  border-top:1rpx solid #f8f9fa;
+}
+.musicList:nth-child(1){
+  border:none;
+}
+.musicList image{
+  width:66rpx;
+  height:66rpx;
+  margin-right:10rpx;
+}
+.musicList .music-name{
+  font-weight: 600;
+  width:100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.musicList .music-author{
+  color:#9b9db1;
+  margin-top:6rpx;
+}

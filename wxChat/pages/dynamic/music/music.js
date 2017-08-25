@@ -5,7 +5,66 @@ Page({
    * 页面的初始数据
    */
   data: {
-       
+       tabBar:[
+         {
+           name:"我的",
+           hclass:"on"
+         },
+         {
+           name: "好友在听",
+           hclass: ""
+         },
+         {
+           name: "电台",
+           hclass: ""
+         }
+       ],
+       userInfo:{
+         userInfoimg:"http://img1.3lian.com/gif/more/11/201212/c011f2b2ab1a10d79fe931a786503d03.jpg",
+         userInfoname:"codeAndroid"
+        },
+        mtabNav:[
+          {
+            icon:"../../../images/like.png",
+            tit:"我喜欢"
+          },
+          {
+            icon: "../../../images/songmenu.png",
+            tit: "我的歌单"
+          },
+          {
+            icon: "../../../images/replay.png",
+            tit: "最近播放"
+          }
+        ],
+        musicList:[
+          {
+            imgUrl:"http://img1.3lian.com/gif/more/11/201212/c011f2b2ab1a10d79fe931a786503d03.jpg",
+            name:"从你的全世界路过",
+            author:"邓超"
+          },
+          {
+            imgUrl: "http://img1.3lian.com/gif/more/11/201212/c011f2b2ab1a10d79fe931a786503d03.jpg",
+            name: "从你的全世界路过",
+            author: "邓超"
+          },
+          {
+            imgUrl: "http://img1.3lian.com/gif/more/11/201212/c011f2b2ab1a10d79fe931a786503d03.jpg",
+            name: "从你的全世界路过",
+            author: "邓超"
+          },
+          {
+            imgUrl: "http://img1.3lian.com/gif/more/11/201212/c011f2b2ab1a10d79fe931a786503d03.jpg",
+            name: "从你的全世界路过",
+            author: "邓超"
+          },
+          {
+            imgUrl: "http://img1.3lian.com/gif/more/11/201212/c011f2b2ab1a10d79fe931a786503d03.jpg",
+            name: "从你的全世界路过",
+            author: "邓超"
+          }
+        ]
+     
   },
 
   /**
@@ -62,5 +121,14 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  changeTab:function(e){
+      var ind=e.currentTarget.dataset.ind;
+      var tabBar = this.data.tabBar;
+      for(var i=0;i<tabBar.length;i++){
+        tabBar[i].hclass="";
+      }  
+      tabBar[ind].hclass = "on";
+      this.setData({"tabBar":tabBar});
   }
 })

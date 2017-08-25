@@ -79,5 +79,6 @@ page{
 }
 .list-treeBox  .list-item-userNameAndSay .list-item-userSay{
   color:#9b9db1;
+  margin-top:3rpx;
 }
 
